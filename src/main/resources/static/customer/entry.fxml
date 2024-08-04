@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!-- xmlns:fxの［/1］はversions指定 ペアとなるコントローラファイルの指定 -->
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fx_spring_demo.controller.customer.CustomerController">
+    <top>
+        <HBox spacing="10" alignment="center">
+            <!-- 名前フォーム -->
+            <Label text="お名前:" />
+            <TextField fx:id="nameField" />
+
+            <!-- 各種ボタン -->
+            <Button fx:id="addButton" text="登録" />
+            <Button fx:id="updateButton" text="更新" />
+            <Button fx:id="deleteButton" text="削除" />
+        </HBox>
+    </top>
+
+<!--    <center>-->
+<!--        &lt;!&ndash; テーブル表示タグ &ndash;&gt;-->
+<!--        <TableView fx:id="customerTable">-->
+<!--            <columns>-->
+<!--                <TableColumn fx:id="idColumn" text="Id" />-->
+<!--                <TableColumn fx:id="nameColumn" text="Name" />-->
+<!--            </columns>-->
+<!--        </TableView>-->
+<!--    </center>-->
+</BorderPane>
+
